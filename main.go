@@ -1,3 +1,5 @@
 package main
 
-gghhjnnnnnnn
+func main() {
+
+}

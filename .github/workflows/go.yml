@@ -24,4 +24,6 @@ jobs:
           go run main.go
 
       - name: Build
-        run: go build -v -o buildfile main.go
+        run: |
+          mkdir -p build
+          go build -v -o ./build/buildfile main.go

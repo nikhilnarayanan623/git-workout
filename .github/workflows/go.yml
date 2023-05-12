@@ -19,12 +19,7 @@ jobs:
         uses: actions/setup-go@v4
         with:
           go-version: '1.20.4'
-          
-      - name: Run
+        
+      - name: Test
         run: |
-          go run main.go
-
-      - name: Build
-        run: |
-          mkdir -p build
-          go build -v -o ./build/buildfile ./main.go
+          go test -v -cover ./...

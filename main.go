@@ -1,7 +1,9 @@
 package main
 
-funcd main(){
+import "fmt"
 
+func main() {
+	fmt.Println("hii")
 }
 
 func CacheStore() (addValueToCache func(key, value int), getValuesFromCache func(key int) (value int, exist bool)) {

@@ -1,6 +1,6 @@
 package main
 
-funcd main(){
+func main(){
 
 }
 
